@@ -60,7 +60,7 @@ const Footer = () => {
       <div className="mt-16 text-center">
         {/* Large Logo Text */}
         <h2 className="text-5xl md:text-9xl font-extrabold text-gray-500 tracking-wide">
-          KHATEED GROUP
+          AL KHATEEB GROUP
         </h2>
 
         {/* Copyright */}

@@ -4,19 +4,18 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import InvestorZone from "../components/InvestorZone";
 import Footer from "../components/Footer";
-import SplashCursor from "../components/SplashCursor";
-import SpiderCanvas from "../components/SpiderCanvas";
+
 
 const HomePage = () => {
 
-  const heroRef = useRef(null);
+
 
   return (
     <div className="bg-black text-white">
     
       {/* HERO SECTION */}
    <section
-        ref={heroRef}
+    
         data-scroll-section
         className="relative h-[50vh] md:min-h-screen overflow-hidden"
       >
@@ -26,9 +25,6 @@ const HomePage = () => {
         ></div>
 
         <Navbar />
-
-        {/* 🔥 Cursor effect only in this section */}
-        <SpiderCanvas containerRef={heroRef} />
 
         <div className="mt-16 relative z-10 px-6 flex flex-col justify-between h-full">
           <h1 className="absolute top-12 md:top-14 left-5 md:left-8 text-4xl md:text-6xl font-light leading-tight">

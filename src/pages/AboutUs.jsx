@@ -49,12 +49,6 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Why Middle East Section */}
-      <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-semibold mb-6">
-          Why Middle East?
-        </h2>
-      </div>
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-10">
         <div className="md:w-3/5">

@@ -96,7 +96,7 @@ const ContactUs = () => {
         {/* Center Text */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10 mt-20">
           <p className="text-lg md:text-3xl font-bold max-w-2xl">
-            Hello, <br /> let’s work together <br /> on your next project.
+            AL KHATEEB GROUP
           </p>
         </div>
       </div>
