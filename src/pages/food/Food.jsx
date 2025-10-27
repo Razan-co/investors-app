@@ -40,7 +40,7 @@ const Food = () => {
     <img
       src="/food logo.png" // replace with your actual logo path
       alt="Kriziano Logo"
-      className="w-8 h-8 sm:w-12 sm:h-12 md:w-30 md:h-30 object-contain"
+      className="w-8 h-8 sm:w-12 rounded-full sm:h-12 md:w-30 md:h-30 object-contain"
     />
 
     {/* Heading Text */}

@@ -26,7 +26,7 @@ const ProjectImage = ({ src, label, path, logo, className }) => (
         <img
           src={logo}
           alt={`${label} logo`}
-          className="w-10 h-10 md:w-30 md:h-30 mb-2 object-contain"
+          className="w-10 h-10 rounded-full md:w-30 md:h-30 mb-2 object-contain"
         />
       )}
       <span className="text-white text-xl md:text-3xl font-semibold transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
