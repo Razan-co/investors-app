@@ -12,9 +12,9 @@ const About = () => {
         </h2>
 
         <div>
-          <p className="text-sm sm:text-lg text-gray-300 mb-2">Since</p>
-          <p className="text-[100px] sm:text-[150px] md:text-[200px] font-extrabold text-gray-700 leading-none">
-            2013
+          <p className="text-sm sm:text-lg text-gray-300 mb-10">Since</p>
+          <p className="text-xl md:text-3xl font-medium  text-gray-600 leading-none">
+             Our approach combines deep market insight with personalized guidance to create opportunities that align with your financial goals. With integrity, expertise, and a commitment to results, we turn investment potential into long-term success.
           </p>
         </div>
 

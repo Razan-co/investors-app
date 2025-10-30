@@ -42,7 +42,7 @@ const Projects = () => {
       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10 mb-10">
         {/* LEFT COLUMN */}
         <div className="flex flex-col md:w-2/3 gap-6">
-          <h1 className="text-5xl md:text-9xl tracking-widest font-light mb-4 md:mb-8">
+          <h1 className="text-5xl md:text-9xl tracking-widest font-bold mb-4 md:mb-8">
             PROJECTS
           </h1>
 

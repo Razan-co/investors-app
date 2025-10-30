@@ -21,25 +21,15 @@ const AboutUs = () => {
       </h1>
 
       {/* Company Overview + Vision & Mission */}
-      <div className="flex flex-col md:flex-row justify-between md:items-start gap-10 mb-16">
-        <div className="md:w-1/2">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
-            Company Overview
+      <div className="flex flex-col md:flex-row justify-between md:items-start gap-10 mb-24">
+        <div className="md:w-1/4">
+          <h2 className="text-3xl md:text-6xl font-semibold mb-0 md:mb-4">
+            Company <br /> Overview
           </h2>
-          <p className="text-gray-300 leading-relaxed">
-            Founded with a passion for design and innovation, [Your Company
-            Name] has grown into a trusted name in interior solutions, lifestyle
-            products, and modern living concepts. Guided by strong values,
-            visionary leadership, and a commitment to quality, we continue to
-            create spaces and experiences that inspire.
-          </p>
         </div>
 
-        <div className="md:w-1/2">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-right md:text-left">
-            Vision & Mission
-          </h2>
-          <p className="text-gray-300 leading-relaxed text-right md:text-left">
+        <div className="md:w-2/3 mt-0 md:mt-5">
+          <p className="text-sm md:text-xl text-gray-300 leading-relaxed">
             Founded with a passion for design and innovation, [Your Company
             Name] has grown into a trusted name in interior solutions, lifestyle
             products, and modern living concepts. Guided by strong values,
@@ -47,18 +37,21 @@ const AboutUs = () => {
             create spaces and experiences that inspire.
           </p>
         </div>
+      
       </div>
 
 
       <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-        <div className="md:w-3/5">
-          <p className="text-gray-300 leading-relaxed">
-            The Middle East represents a region of immense growth, cultural
-            richness, and strategic trade opportunities. With its expanding
-            consumer base and strong investor ecosystem, it aligns perfectly
-            with our vision for global expansion. By entering this market, we
-            seek to build synergy with investors, unlock new opportunities, and
-            establish a strong regional presence.
+         <div className="md:w-3/5">
+          <h2 className="text-3xl md:text-5xl font-semibold mb-4 text-right md:text-left">
+            Vision & Mission
+          </h2>
+          <p className="text-sm md:text-xl text-gray-300 leading-relaxed text-right md:text-left">
+            Founded with a passion for design and innovation, [Your Company
+            Name] has grown into a trusted name in interior solutions, lifestyle
+            products, and modern living concepts. Guided by strong values,
+            visionary leadership, and a commitment to quality, we continue to
+            create spaces and experiences that inspire.
           </p>
         </div>
 

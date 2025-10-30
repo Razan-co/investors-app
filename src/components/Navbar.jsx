@@ -56,7 +56,7 @@ const Navbar = () => {
     >
       {/* Logo */}
       <div className="flex items-center space-x-2">
-        <img src="/logo.png" alt="Logo" className="w-20 h-14 object-contain" />
+        <img src="/logo.png" alt="Logo" className="w-20 h-16 md:w-28 md:h-20 object-contain" />
       </div>
 
       {/* Desktop Menu */}

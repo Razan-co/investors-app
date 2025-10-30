@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { ChevronLeft } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import emailjs from "emailjs-com";
 import toast from "react-hot-toast";
 
 const ContactUs = () => {
@@ -12,12 +11,14 @@ const ContactUs = () => {
     fullName: "",
     mobile: "",
     email: "",
+    companyName: "",
     message: "",
   });
 
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // ✅ Validation logic
+  // ✅ Validation
   const validate = () => {
     const newErrors = {};
     if (!formData.fullName.trim()) newErrors.fullName = "Full name is required";
@@ -27,41 +28,61 @@ const ContactUs = () => {
     if (!formData.email.trim()) newErrors.email = "Email is required";
     if (!/\S+@\S+\.\S+/.test(formData.email))
       newErrors.email = "Email is invalid";
+    if (!formData.companyName.trim())
+      newErrors.companyName = "Company Name is required";
     if (!formData.message.trim()) newErrors.message = "Message is required";
     return newErrors;
   };
 
-  // ✅ Form submission with toast
-  const handleSubmit = (e) => {
+  // 🚀 Submit to Google Sheets
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
     setErrors(validationErrors);
 
-    if (Object.keys(validationErrors).length === 0) {
-      emailjs
-        .send(
-          "service_tmw0dhi", // Your EmailJS service ID
-          "template_9bpi93b", // Your EmailJS template ID
-          formData,
-          "e1iJTv5bjg3adXxkN" // Your public key
-        )
-        .then(() => {
-          toast.success("Message sent successfully!");
-          setFormData({ fullName: "", mobile: "", email: "", message: "" });
-          setErrors({});
-        })
-        .catch((error) => {
-          toast.error("Failed to send message. Try again later.");
-          console.error(error);
-        });
+    if (Object.keys(validationErrors).length > 0) return;
+
+    setIsSubmitting(true);
+
+    const SCRIPT_URL =
+      "https://script.google.com/macros/s/AKfycby8l4z2pzSmzecoagaV2bCgJmZ7hz0yR8G53x3jAhh7JoPU0RJTetotXVkL-zGXLiMNpQ/exec"; // ✅ Your Google Apps Script URL
+
+    try {
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors", // prevents CORS blocking
+        headers: {
+          "Content-Type": "application/json",
+        },
+            body: JSON.stringify({
+        fullName: formData.fullName,
+        mobile: formData.mobile,
+        email: formData.email,
+        companyName: formData.companyName,
+        message: formData.message,
+      }),
+
+      });
+
+      toast.success("✅ Message sent successfully!");
+      setFormData({
+        fullName: "",
+        mobile: "",
+        email: "",
+        companyName: "",
+        message: "",
+      });
+      setErrors({});
+    } catch (error) {
+      console.error(error);
+      toast.error("❌ Failed to send message. Try again later.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   return (
     <section className="bg-black text-white min-h-screen flex flex-col">
-  
-     
-
       {/* Hero Section */}
       <div
         className="relative w-full h-[60vh] bg-cover bg-center"
@@ -163,6 +184,27 @@ const ContactUs = () => {
               )}
             </div>
 
+            {/* Company Name */}
+            <div>
+              <label className="block text-sm mb-2 font-light">
+                COMPANY NAME
+              </label>
+              <input
+                type="text"
+                value={formData.companyName}
+                onChange={(e) =>
+                  setFormData({ ...formData, companyName: e.target.value })
+                }
+                placeholder="Company Name"
+                className="w-full bg-transparent border border-gray-500 rounded-md px-4 py-3 text-white focus:outline-none focus:border-white"
+              />
+              {errors.companyName && (
+                <p className="text-red-400 text-sm mt-1">
+                  {errors.companyName}
+                </p>
+              )}
+            </div>
+
             {/* Message */}
             <div>
               <label className="block text-sm mb-2 font-light">MESSAGE</label>
@@ -184,9 +226,10 @@ const ContactUs = () => {
             <div className="text-center pt-2">
               <button
                 type="submit"
-                className="bg-white cursor-pointer text-black font-semibold px-8 py-3 rounded-md hover:bg-gray-200 transition-all duration-300"
+                disabled={isSubmitting}
+                className="bg-white cursor-pointer text-black font-semibold px-8 py-3 rounded-md hover:bg-gray-200 transition-all duration-300 disabled:opacity-50"
               >
-                Submit
+                {isSubmitting ? "Sending..." : "Submit"}
               </button>
             </div>
           </form>
