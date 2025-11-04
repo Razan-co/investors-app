@@ -44,7 +44,7 @@ const Glasses = () => {
 
     {/* Heading Text */}
     <h1 className="text-3xl capitalize sm:text-5xl md:text-8xl font-medium tracking-wide">
-      KRIZIANO EYEWEAR
+      SMART LENZY
     </h1>
   </div>
 </div>

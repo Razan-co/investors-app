@@ -3,10 +3,10 @@ import { Link } from "react-router-dom"; // ✅ Import Link
 
 
 const projectsData = [
-  { src: "/glass.png", label: "Eyewear", path: "/glass", logo: "/glass logo.png" },
+  { src: "/glass.png", label: "Lenzy", path: "/glass", logo: "/glass logo.png" },
   { src: "/food.png", label: "Food", path: "/food", logo: "/food logo.png" },
   { src: "/cloth.png", label: "Cloth", path: "/cloth", logo: "/cloth logo.png" },
-  { src: "/sofa.png", label: "Sofa", path: "/sofa", logo: "/home logo.png" },
+  { src: "/sofa.png", label: "Homes", path: "/sofa", logo: "/home logo.png" },
 ];
 
 const ProjectImage = ({ src, label, path, logo, className }) => (

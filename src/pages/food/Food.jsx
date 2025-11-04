@@ -45,7 +45,7 @@ const Food = () => {
 
     {/* Heading Text */}
     <h1 className="text-3xl capitalize sm:text-5xl md:text-8xl font-medium tracking-wide">
-     FOOD DELIVERY
+     FOODYIES CART
     </h1>
   </div>
 </div>
@@ -53,10 +53,10 @@ const Food = () => {
         {/* Bottom Text - Bottom Left */}
         <div className="absolute bottom-12 left-6 sm:bottom-16 sm:left-12 z-10">
           <p className="text-2xl sm:text-3xl md:text-5xl font-semibold mb-2">
-            See the Future Clearly
+            Delicious Food, Delivered Fast
           </p>
           <p className="text-sm sm:text-xl text-gray-200">
-            Premium Eyewear Crafted for Global Trends
+            our favorite meals from local restaurants, brought straight to your door.
           </p>
         </div>
       </section>
