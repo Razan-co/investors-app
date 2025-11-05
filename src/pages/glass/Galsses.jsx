@@ -26,7 +26,7 @@ const Glasses = () => {
         {/* 🔙 Back Button */}
         <button
           onClick={() => navigate(-1)}
-          className="absolute cursor-pointer top-16 left-2 md:top-24 md:left-10 flex items-center gap-2 text-gray-300 hover:text-white transition z-20"
+          className="absolute cursor-pointer top-18 left-2 md:top-24 md:left-10 flex items-center gap-2 text-gray-300 hover:text-white transition z-20"
         >
           {/* 👇 Smaller on mobile, larger on medium+ */}
           <ChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
@@ -39,7 +39,7 @@ const Glasses = () => {
     <img
       src="/glass logo.png" // replace with your actual logo path
       alt="Kriziano Logo"
-      className="w-8 h-8 sm:w-12 sm:h-12 md:w-30 md:h-30 object-contain"
+      className="w-14 h-14 sm:w-16 sm:h-16 md:w-30 md:h-30 object-contain"
     />
 
     {/* Heading Text */}
