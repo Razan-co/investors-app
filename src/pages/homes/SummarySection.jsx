@@ -10,7 +10,7 @@ const SummarySection = () => {
         </h2>
 
         <p className="text-gray-300 text-sm sm:text-lg leading-relaxed mb-4">
-          Kriziano Home is the interior design and lifestyle division of Khatip Group, 
+          Kriziano Home is the interior design and lifestyle division of AL KHATEEB GROUP, 
           specializing in premium furniture, home décor, and turnkey interior solutions. 
           We deliver customized living spaces that embody elegance, comfort, and innovation.
         </p>

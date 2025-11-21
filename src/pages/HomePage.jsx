@@ -4,21 +4,22 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import InvestorZone from "../components/InvestorZone";
 import Footer from "../components/Footer";
+import SplashCursor from "../components/SplashCursor";
 
 
 const HomePage = () => {
 
-
+const homeRef = useRef(null);
 
   return (
     <div className="bg-black text-white">
     
       {/* HERO SECTION */}
    <section
-    
-        data-scroll-section
+       ref={homeRef}
         className="relative h-[50vh] md:min-h-screen overflow-hidden"
       >
+          <SplashCursor homeRef={homeRef}/>
         <div
           className="absolute inset-0 bg-cover h-[60vh] md:h-full bg-center opacity-60"
           style={{ backgroundImage: "url('/home.png')" }}
@@ -39,21 +40,21 @@ const HomePage = () => {
       </section>
 
       {/* ABOUT SECTION */}
-      <section data-scroll-section>
+      <section >
         <About />
       </section>
 
       {/* PROJECTS SECTION */}
-      <section id="businesses" data-scroll-section>
+      <section id="businesses">
         <Projects />
       </section>
 
       {/* INVESTOR SECTION */}
-      <section id="investors" data-scroll-section>
+      <section id="investors">
         <InvestorZone />
       </section>
       
-      <section data-scroll-section>
+      <section>
         <Footer/>
       </section>
     </div>

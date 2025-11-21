@@ -5,11 +5,4 @@ html, body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  overflow: hidden; /* locomotive manages scroll */
-}
-
-[data-scroll-container] {
-  height: auto !important;
-  min-height: 100%;
-  overflow: hidden;
 }

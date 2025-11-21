@@ -13,7 +13,7 @@ const About = () => {
 
         <div>
           <p className="text-sm sm:text-lg text-gray-300 mb-10">Since</p>
-          <p className="text-xl md:text-3xl font-medium  text-gray-600 leading-none">
+          <p className="text-lg md:text-3xl font-sans  text-gray-300">
              Our approach combines deep market insight with personalized guidance to create opportunities that align with your financial goals. With integrity, expertise, and a commitment to results, we turn investment potential into long-term success.
           </p>
         </div>

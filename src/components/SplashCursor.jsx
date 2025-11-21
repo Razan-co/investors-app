@@ -1,63 +1,71 @@
 "use client";
 import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
-const SplashCursor = ({ containerRef }) => {
-  const cursorRef = useRef(null);
-  const requestRef = useRef();
+const SplashCursor = ({ homeRef }) => {
+  const followerRef = useRef(null);
 
   useEffect(() => {
-    const cursor = cursorRef.current;
-    if (!containerRef.current || !cursor) return;
+    const follower = followerRef.current;
+    const homeSection = homeRef.current;
 
-    const container = containerRef.current;
-    let mouseX = 0;
-    let mouseY = 0;
-    let posX = 0;
-    let posY = 0;
-    let hue = 0;
+    if (!follower || !homeSection) return;
 
-    const onMouseMove = (e) => {
-      const rect = container.getBoundingClientRect();
-      mouseX = e.clientX - rect.left;
-      mouseY = e.clientY - rect.top;
+    const moveFollower = (e) => {
+      const rect = homeSection.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      gsap.to(follower, {
+        x: x - 35,
+        y: y - 35,
+        duration: 0.4,
+        ease: "power2.out",
+      });
     };
 
-    container.addEventListener("mousemove", onMouseMove);
-
-    const animate = () => {
-      // Smooth follow
-      posX += (mouseX - posX) * 0.2;
-      posY += (mouseY - posY) * 0.2;
-
-      // Change color over time
-      hue = (hue + 2) % 360;
-      cursor.style.backgroundColor = `hsl(${hue}, 100%, 50%)`;
-
-      cursor.style.transform = `translate3d(${posX}px, ${posY}px, 0)`;
-      requestRef.current = requestAnimationFrame(animate);
+    const show = () => {
+      gsap.to(follower, {
+        scale: 1,
+        duration: 0.3,
+        ease: "power2.out",
+      });
     };
 
-    animate();
+    const hide = () => {
+      gsap.to(follower, {
+        scale: 0,
+        duration: 0.3,
+        ease: "power2.out",
+      });
+    };
+
+    homeSection.addEventListener("mousemove", moveFollower);
+    homeSection.addEventListener("mouseenter", show);
+    homeSection.addEventListener("mouseleave", hide);
 
     return () => {
-      container.removeEventListener("mousemove", onMouseMove);
-      cancelAnimationFrame(requestRef.current);
+      homeSection.removeEventListener("mousemove", moveFollower);
+      homeSection.removeEventListener("mouseenter", show);
+      homeSection.removeEventListener("mouseleave", hide);
     };
-  }, [containerRef]);
+  }, [homeRef]);
 
   return (
     <div
-      ref={cursorRef}
+      ref={followerRef}
       style={{
         position: "absolute",
-        top: 0,
-        left: 0,
-        width: "50px",
-        height: "50px",
+        width: "70px",
+        height: "70px",
         borderRadius: "50%",
         pointerEvents: "none",
-        transform: "translate3d(0,0,0)",
-        mixBlendMode: "difference",
+        top: 4,
+        left: 4,
+        transform: "scale(0)",
+        background: "#fff",              // pure white, required for difference
+        mixBlendMode: "difference",      // blend mode effect
+        zIndex: 9999,
       }}
     />
   );

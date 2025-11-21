@@ -11,7 +11,7 @@ const ProductRange = () => {
           </h2>
 
           <p className="text-gray-300 text-sm sm:text-base md:w-2/3 leading-relaxed">
-            Kriziano Eyewear is more than an accessory—it's a vision of style
+            Smart Lenzy is more than an accessory—it's a vision of style
             and innovation. From precision-crafted prescription glasses to bold
             fashion sunglasses, our range is designed for individuals who see
             the world differently and want the world to see them the same way.

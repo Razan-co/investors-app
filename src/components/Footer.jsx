@@ -51,7 +51,6 @@ const Footer = () => {
           <div className="flex flex-col space-y-2">
             <p className="hover:text-gray-100 cursor-pointer">Instagram</p>
             <p className="hover:text-gray-100 cursor-pointer">Facebook</p>
-            <p className="hover:text-gray-100 cursor-pointer">LinkedIn</p>
           </div>
         </div>
       </div>

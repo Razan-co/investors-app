@@ -30,8 +30,7 @@ const AboutUs = () => {
 
         <div className="md:w-2/3 mt-0 md:mt-5">
           <p className="text-sm md:text-xl text-gray-300 leading-relaxed">
-            Founded with a passion for design and innovation, [Your Company
-            Name] has grown into a trusted name in interior solutions, lifestyle
+            Founded with a passion for design and innovation, AL KHATEEB GROUP has grown into a trusted name in interior solutions, lifestyle
             products, and modern living concepts. Guided by strong values,
             visionary leadership, and a commitment to quality, we continue to
             create spaces and experiences that inspire.
@@ -47,8 +46,7 @@ const AboutUs = () => {
             Vision & Mission
           </h2>
           <p className="text-sm md:text-xl text-gray-300 leading-relaxed text-right md:text-left">
-            Founded with a passion for design and innovation, [Your Company
-            Name] has grown into a trusted name in interior solutions, lifestyle
+            Founded with a passion for design and innovation, AL KHATEEB GROUP has grown into a trusted name in interior solutions, lifestyle
             products, and modern living concepts. Guided by strong values,
             visionary leadership, and a commitment to quality, we continue to
             create spaces and experiences that inspire.

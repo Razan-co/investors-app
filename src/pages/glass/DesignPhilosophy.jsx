@@ -13,7 +13,7 @@ const DesignPhilosophy = () => {
         <div className="md:w-3/2">
           <h2 className="text-xl font-semibold mb-3">Form Meets Function</h2>
           <p className="text-gray-300 leading-relaxed">
-            At Kriziano Eyewear, every design begins with a simple principle — style
+            At Smart Lenzy, every design begins with a simple principle — style
             should never sacrifice comfort. Our frames are engineered with lightweight
             materials, ergonomic curves, and precision fitting, ensuring that each pair
             feels as effortless to wear as it looks stunning.
@@ -35,7 +35,7 @@ const DesignPhilosophy = () => {
           <p className="text-gray-300 leading-relaxed">
             We believe in the power of simplicity with an edge. Our frames carry clean
             lines, timeless silhouettes, and subtle yet daring twists. Whether it’s a
-            sharp geometric cut or a delicate gold accent, Christiano Eyewear celebrates
+            sharp geometric cut or a delicate gold accent, Smart Lenzy celebrates
             confidence through understated luxury.
           </p>
         </div>
@@ -74,10 +74,10 @@ const DesignPhilosophy = () => {
         <div className="md:w-3/2">
           <h2 className="text-xl font-semibold mb-3">Identity in Frames</h2>
           <p className="text-gray-300 leading-relaxed">
-            Kriziano Eyewear isn’t just about helping people see better — it’s about
+            Smart Lenzy isn’t just about helping people see better — it’s about
             helping them be seen better. Each collection is designed to reflect
             individuality, empower self-expression, and align with modern lifestyle
-            choices. Wearing Kriziano means carrying a piece of art that mirrors who you
+            choices. Wearing Smart Lenzy means carrying a piece of art that mirrors who you
             are.
           </p>
         </div>

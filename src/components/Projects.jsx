@@ -42,7 +42,7 @@ const Projects = () => {
       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10 mb-10">
         {/* LEFT COLUMN */}
         <div className="flex flex-col md:w-2/3 gap-6">
-          <h1 className="text-5xl md:text-9xl tracking-widest font-bold mb-4 md:mb-8">
+          <h1 className="text-5xl md:text-[140px] tracking-widest font-bold mb-4 md:mb-8">
             PROJECTS
           </h1>
 
@@ -54,14 +54,14 @@ const Projects = () => {
         </div>
 
         {/* RIGHT COLUMN */}
-     <div className="md:w-1/3 flex justify-center items-start">
+     <div className="md:w-1/3 h-90 md:h-full flex justify-center">
   <ProjectImage {...projectsData[2]} />
 </div>
       </div>
 
       {/* BOTTOM WIDE IMAGE */}
     <div className="w-full flex justify-center">
-  <ProjectImage {...projectsData[3]} className="w-full md:w-5/6" />
+  <ProjectImage {...projectsData[3]} className="w-full" />
 </div>
     </div>
   );
