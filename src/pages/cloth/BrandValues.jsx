@@ -21,7 +21,7 @@ const BrandValues = () => {
       </div>
 
       {/* Text Section */}
-      <div className="max-w-6xl text-xl mt-10 space-y-4 text-left text-gray-300">
+      <div className="max-w-6xl text-md md:text-xl mt-10 space-y-4 text-left text-gray-300">
         <p>
           <span className="font-semibold text-white">
             Signature Sophistication:
