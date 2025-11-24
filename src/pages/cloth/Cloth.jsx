@@ -27,14 +27,14 @@ const Cloth = () => {
         {/* 🔙 Back Button */}
         <button
           onClick={() => navigate(-1)}
-          className="absolute cursor-pointer top-18 left-2 md:top-24 md:left-10 flex items-center gap-2 text-gray-300 hover:text-white transition z-20"
+          className="absolute cursor-pointer top-18 left-1 md:top-24 md:left-10 flex items-center gap-2 text-gray-300 hover:text-white transition z-20"
         >
           {/* 👇 Smaller on mobile, larger on medium+ */}
           <ChevronLeft className="w-6 h-6 md:w-8 md:h-8" />
         </button>
 
         {/* Heading - Top Left */}
-      <div className="absolute top-14 left-10 sm:top-12 sm:left-28 z-10">
+      <div className="absolute top-14 left-8 sm:top-12 sm:left-28 z-10">
   <div className="flex items-center gap-3 md:gap-8">
     {/* Logo Image */}
     <img

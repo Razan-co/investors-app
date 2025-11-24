@@ -13,9 +13,9 @@ const ApparelOverview = () => {
         </div>
 
         {/* Right side - Paragraph */}
-        <div className="md:w-full text-gray-300 text-sm sm:text-2xl text-justify leading-relaxed mt-4 md:mt-0">
+        <div className="md:w-full text-gray-300 text-md sm:text-2xl text-justify leading-relaxed mt-4 md:mt-0">
           <p>
-            Kriziano Clothing is the fashion division of Khatip Group, offering
+            Kriziano Clothing is the fashion division of AL KHATEEB GROUP, offering
             a curated range of menswear, womenswear, and accessories. Our designs
             blend modern trends with timeless tradition, appealing to
             style-conscious customers across diverse markets.
@@ -28,7 +28,7 @@ const ApparelOverview = () => {
         <h2 className="text-lg sm:text-3xl font-semibold mb-4">
           Our collections include:
         </h2>
-        <ul className="list-disc list-inside md:ml-16 ml-8 text-gray-300 text-sm sm:text-xl space-y-1">
+        <ul className="list-disc list-inside md:ml-16 ml-8 text-gray-300 text-md sm:text-xl space-y-1">
           <li>Menswear: Smart casuals, formal wear, and ethnic styles.</li>
           <li>
             Womenswear: Contemporary dresses, luxury ethnic wear, and everyday
@@ -43,7 +43,7 @@ const ApparelOverview = () => {
         <h2 className="text-lg sm:text-3xl font-semibold mb-4">
           Target Demographics
         </h2>
-        <ul className="list-disc list-inside md:ml-16 ml-8 text-gray-300 text-sm sm:text-xl space-y-1">
+        <ul className="list-disc list-inside md:ml-16 ml-8 text-gray-300 text-md sm:text-xl space-y-1">
           <li>
             Primary Audience: Urban millennials and Gen Z who value both style
             and comfort.
@@ -61,7 +61,7 @@ const ApparelOverview = () => {
 
       {/* Market Insight */}
       <div className="w-full max-w-8xl mt-8">
-        <p className="text-sm sm:text-xl text-gray-300">
+        <p className="text-md sm:text-xl text-gray-300">
           <span className="font-semibold text-white">Market Insight:</span> The
           global apparel market is projected to reach{" "}
           <span className="font-semibold text-white">$2 trillion by 2030</span>,

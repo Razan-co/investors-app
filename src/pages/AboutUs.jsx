@@ -10,13 +10,13 @@ const AboutUs = () => {
       {/* BACK BUTTON */}
       <button
         onClick={() => navigate(-1)}
-        className="absolute cursor-pointer top-14 left-8 flex items-center gap-2 text-gray-300 hover:text-white transition"
+        className="absolute cursor-pointer top-17 left-8 flex items-center gap-2 text-gray-300 hover:text-white transition"
       >
         <ChevronLeft size={20} />
       </button>
 
       {/* ABOUT US HEADER */}
-      <h1 className="text-5xl md:text-6xl font-bold text-center mb-12">
+      <h1 className="text-5xl md:text-7xl font-bold text-center mb-20">
         ABOUT US
       </h1>
 
@@ -29,7 +29,7 @@ const AboutUs = () => {
         </div>
 
         <div className="md:w-2/3 mt-0 md:mt-5">
-          <p className="text-sm md:text-xl text-gray-300 leading-relaxed">
+          <p className="text-sm md:text-xl text-gray-300 leading-relaxed text-justify">
             Founded with a passion for design and innovation, AL KHATEEB GROUP has grown into a trusted name in interior solutions, lifestyle
             products, and modern living concepts. Guided by strong values,
             visionary leadership, and a commitment to quality, we continue to
@@ -45,11 +45,8 @@ const AboutUs = () => {
           <h2 className="text-3xl md:text-5xl font-semibold mb-4 text-right md:text-left">
             Vision & Mission
           </h2>
-          <p className="text-sm md:text-xl text-gray-300 leading-relaxed text-right md:text-left">
-            Founded with a passion for design and innovation, AL KHATEEB GROUP has grown into a trusted name in interior solutions, lifestyle
-            products, and modern living concepts. Guided by strong values,
-            visionary leadership, and a commitment to quality, we continue to
-            create spaces and experiences that inspire.
+          <p className="text-sm md:text-xl text-gray-300 leading-relaxed text-justify">
+           Our vision is to be the most trusted and innovative platform for investors, empowering individuals and businesses with transparent insights, data-driven tools, and expert guidance. We are committed to simplifying the investment journey by providing reliable information, intuitive technology, and educational resources that enable smarter decisions, stronger portfolios, and sustainable long-term growth.
           </p>
         </div>
 

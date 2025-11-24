@@ -27,7 +27,7 @@ const InvestorZone = () => {
         {/* Right Image */}
         <div className="md:w-1/3 w-full flex justify-center md:justify-end">
           <img
-            src="/investors.png"
+            src="/investor.png"
             alt="Investors team"
             className="rounded-2xl shadow-lg object-cover w-full max-w-sm"
           />

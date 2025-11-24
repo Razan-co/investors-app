@@ -15,7 +15,7 @@ const BrandStory = () => {
         </div>
 
           {/* Paragraphs */}
-          <div className="space-y-5 text-gray-300 text-sm sm:text-xl text-justify leading-relaxed mt-6">
+          <div className="space-y-5 text-gray-300 text-md sm:text-xl text-justify leading-relaxed mt-6">
             <p>
               <span className="font-semibold text-white">Kriziano Clothing</span> was born from a vision to dress ambition, confidence, and individuality. We don’t just create garments—we sculpt style statements for people who refuse to blend in. Every silhouette, every fabric choice, every detail is designed to elevate the everyday into the extraordinary.
             </p>
@@ -39,7 +39,7 @@ const BrandStory = () => {
       {/* Bottom Quote - Centered Below Both */}
       <div className="mt-12 text-center max-w-4xl">
         <p className="italic text-gray-200 text-sm sm:text-base uppercase tracking-wide leading-relaxed">
-          Christiano Clothing is not just worn—it’s experienced. It’s a brand for those who want their wardrobe to whisper class and shout confidence at the same time.
+          kriziano Clothing is not just worn—it’s experienced. It’s a brand for those who want their wardrobe to whisper class and shout confidence at the same time.
         </p>
       </div>
     </section>

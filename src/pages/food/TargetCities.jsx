@@ -21,7 +21,7 @@ const TargetCities = () => {
         {/* Right Image */}
         <div className="md:w-1/2 flex justify-center">
           <img
-            src="/target1.png"
+            src="/target.avif"
             alt="Target Cities"
             className="rounded-xl shadow-lg w-full max-w-xl object-cover"
           />

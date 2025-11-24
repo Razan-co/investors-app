@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"; // ✅ Import Link
 const projectsData = [
   { src: "/glass.png", label: "Lenzy", path: "/glass", logo: "/glass logo.png" },
   { src: "/food.png", label: "Food", path: "/food", logo: "/food logo.png" },
-  { src: "/cloth.png", label: "Cloth", path: "/cloth", logo: "/cloth logo.png" },
+  { src: "/cloth.jpg", label: "Cloth", path: "/cloth", logo: "/cloth logo.png" },
   { src: "/sofa.png", label: "Homes", path: "/sofa", logo: "/home logo.png" },
 ];
 
@@ -17,7 +17,8 @@ const ProjectImage = ({ src, label, path, logo, className }) => (
     <img
       src={src}
       alt={label}
-      className="w-full object-cover rounded border border-gray-700 transition-transform duration-500 group-hover:scale-105"
+     className="w-full h-full object-cover rounded border border-gray-700 transition-transform duration-500 group-hover:scale-105"
+
     />
 
     {/* Overlay with logo + label */}
@@ -54,14 +55,15 @@ const Projects = () => {
         </div>
 
         {/* RIGHT COLUMN */}
-     <div className="md:w-1/3 h-90 md:h-full flex justify-center">
-  <ProjectImage {...projectsData[2]} />
+    <div className="w-full md:w-1/3 h-86 md:h-full md:border-none border border-gray-100 rounded">
+  <ProjectImage {...projectsData[2]} className="w-full h-full" />
 </div>
+
       </div>
 
       {/* BOTTOM WIDE IMAGE */}
-    <div className="w-full flex justify-center">
-  <ProjectImage {...projectsData[3]} className="w-full" />
+   <div className="w-full flex justify-center md:border-none border border-gray-100 rounded">
+  <ProjectImage {...projectsData[3]} className="w-full h-88 md:h-auto" />
 </div>
     </div>
   );
