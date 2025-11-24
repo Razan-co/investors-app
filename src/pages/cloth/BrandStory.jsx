@@ -29,7 +29,7 @@ const BrandStory = () => {
         {/* Right Image */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
           <img
-            src="/brand.png"
+            src="/brand.jpg"
             alt="Brand Fashion Dress"
             className="w-full h-auto md:h-[90vh] object-cover"
           />
