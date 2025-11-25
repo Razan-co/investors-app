@@ -50,7 +50,7 @@ const ProductGallery = () => {
         <p className="text-gray-300 text-sm sm:text-xl leading-relaxed">
           The interior design and furniture industry is projected to grow rapidly
           with rising urbanization, higher disposable incomes, and
-          lifestyle-focused consumers. Christiano Home is uniquely positioned
+          lifestyle-focused consumers. kriziano Homes is uniquely positioned
           with premium design expertise, scalable manufacturing partnerships, and
           global market ambitions.
         </p>

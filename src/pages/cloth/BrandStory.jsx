@@ -31,7 +31,7 @@ const BrandStory = () => {
           <img
             src="/brand.jpg"
             alt="Brand Fashion Dress"
-            className="w-full h-auto md:h-[90vh] object-cover"
+            className="w-full h-[50vh] md:h-[90vh] object-cover"
           />
         </div>
       </div>
