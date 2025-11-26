@@ -4,6 +4,7 @@ import { ChevronLeft } from "lucide-react";
 import ApparelOverview from "./ApparelOverview";
 import BrandStory from "./BrandStory";
 import BrandValues from "./BrandValues";
+import PopularBrands from "../../components/PopularBrands";
 
 
 const Cloth = () => {
@@ -62,6 +63,7 @@ const Cloth = () => {
       </section>
         <ApparelOverview/>
         <BrandStory/>
+        <PopularBrands/>
         <BrandValues/>
     </>
   );
